@@ -394,6 +394,9 @@ body {
 #carousel-findoo p.text-description-carousel {
   font-size: 18px;
 }
+#section-video span.before:after {
+  font-size: 6rem !important;
+}
 .image-slider img {
   transform: none !important;
   margin-left: 0 !important;
