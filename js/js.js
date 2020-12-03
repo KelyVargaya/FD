@@ -102,7 +102,7 @@
       $(".mobile-nav, .mobile-nav-toggle").hide();
     }
   
-    
+   /*
     var nav_sections = $('section');
     var main_nav = $('.nav-menu, #mobile-nav');
   
@@ -124,6 +124,12 @@
         }
       });
     });
+    */
+   $(document).ready(function() {
+    $('.venobox').venobox();
+  });
+
+  
     $('.owl-carousel').owlCarousel({
       autoplay: true,
       dots: true,
