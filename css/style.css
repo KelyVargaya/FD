@@ -277,8 +277,8 @@ body {
   padding-top: 50px;
 }
 .image-slider img{
-  transform: scale(1.4);
-  margin-left: -35px;
+  transform: scale(1.5);
+  margin-left: -60px;
 }
 #carousel-findoo .carousel-item {
   width: 100%;
@@ -1710,7 +1710,7 @@ font-size: 11px;
       font-size: 56px;
   }
   .titulos-home .text-green {
-    font-size: 120px;
+    font-size: 100px;
   }
   .section-banner-2 .text-green {
     font-size: 80px;
