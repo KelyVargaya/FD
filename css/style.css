@@ -455,6 +455,9 @@ section{
   overflow: hidden;
   padding-top: 50px;
 }
+div#findoo-carousel {
+  margin-top: 25px;
+}
 .image-slider img{
   transform: scale(1.5);
   margin-left: -60px;
@@ -486,7 +489,7 @@ section{
 
 #carousel-findoo h2 {
   color: #000;
-  font-size: 102px;
+  font-size: 100px;
   font-weight: 900;
   line-height: 0.9;
   letter-spacing: -4px;
