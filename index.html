@@ -17,7 +17,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="background-findoo">
+<body class="hero">
     <header id="header" class="fixed-top">
         <div class="container-fluid d-flex align-items-center">
             <a href="index.html" class="logo mr-auto"><img src="img/logo-findoo.png" alt=""></a>
@@ -38,7 +38,7 @@
     
         </div>
     </header>
-    <section id="carousel-findoo" class="hero">
+    <section id="carousel-findoo">
         <div id="findoo-carousel" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators" id="hero-carousel-indicators">
                     <li data-target="#findoo-carousel" data-slide-to="0" class="active"></li>
@@ -161,7 +161,7 @@
                                 
                             </div>
                             <div class="col-lg-5 image-slider">
-                                <img src="img/slide4-findoo.png" class="img-fluid">
+                                <img src="img/slide4-findoo.png" class="img-fluid img-scale">
                             </div>
                           </div>
                       </div>
@@ -190,7 +190,7 @@
                                 
                             </div>
                             <div class="col-lg-5 image-slider">
-                                <img src="img/slide5-findoo.png" class="img-fluid">
+                                <img src="img/slide5-findoo.png" class="img-fluid img-scale">
                             </div>
                           </div>
                       </div>
@@ -207,11 +207,7 @@
                   <span class="carousel-control-next-icon icon-angle-right" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
-                <div class="btn-whatsapp">
-                    <a href="#">
-                        <img src="img/whatsapp.svg" alt="" class="img-fluid">
-                    </a>
-                </div>
+                
               </div>
               <div class="btn-carousel d-block d-lg-none">
                 <a href="cart.html" type="button" class="btn btn-findoo btn-extra-lg btn-findoo-ranger">¡afíliate ahora!</a>
@@ -221,35 +217,35 @@
                     <img src="img/app-store.png" class="img-fluid">
                 </div>
             </div>
-          </section>
+    </section>
+
+    <div class="btn-whatsapp">
+        <a href="#">
+            <img src="img/whatsapp.svg" alt="" class="img-fluid">
+            <div class="descripcion-whatsapp">
+                <p>¡quiero más información!</p>
+            </div>
+        </a>
+    </div>
 
     <main class="main-home-principal container-findoo"> 
-          <section id="section-home-2" class="seccion-v1-home ">
+        <section id="section-home-2" class="seccion-v1-home ">
             <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-md-10">
-                        <div class="section-title">
-                            <h4>sabemos exactamente</h4>
-                            <h2>qué necesitas <span class="text-black">y</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-5">
 
-                    </div>
-                    <div class="col-lg-6 col-7">
+                <div class="row">
+                    <div class="col-md-8 offset-md-1 wow zoomIn">
                         <div class="section-title">
-                            <h2 class="p-0">qué estás <br>buscando</h2>
+                            <img src="img/findoo-text/sabemos-que-necesitas.svg" alt="" class="img-fluid">
                         </div>
+                       
                     </div>
                 </div>
             
                 <div class="row justify-content-center mt-4">
-                    <div class="col-md-4 d-none d-md-block">
+                    <div class="col-md-4 d-none d-md-block wow fadeInUp">
                         <img src="img/foco2.gif" class="img-fluid mt-lg-5">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeInUp">
                         <p>No necesitamos una bola de cristal para averiguarlo, ¿sabes por qué?... <br>
                             Porque <strong>hemos estado en el mismo lugar donde tú estás ahora</strong>.</p>
                             
@@ -265,16 +261,15 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-9 col-md-11">
                         <div class="section-banner">
-                            <h4><strong>entre el 75% y 90% de los negocios <span class="text-green">desaparecen</span> <span class="pr-5">durante sus primeros años</span></strong></h4>
-              
-                            <img src="img/hombre-asustado.png" class="img-fluid d-block d-sm-none">
+                            <img src="img/findoo-text/banner-porcentaje-desaparicion-negocios.svg" alt="" class="img-fluid wow slideInLeft">
+                            <img src="img/hombre-asustado.png" class="img-fluid banner-img-negocios wow fadeInUp" data-wow-duration="1.3s">
                         </div>
                     </div>
                 </div>
                 
                 <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-6 pt-5 order-lg-0 order-1">
+                    <div class="col-md-1"></div> 
+                    <div class="col-md-6 pt-5 order-lg-0 order-1 wow fadeIn" data-wow-duration="1.4s">
                         <h3 class="mt-2 mb-4">¿Sabes por qué?</h3>
                         <p>Porque esos negocios se concentran sólo en "vender más" y sufren para encontrar nuevos clientes, pero no consiguen los suficientes para seguir creciendo; y lo que es peor, <strong>nunca encuentran a los clientes correctos.</strong></p>
                         <p>Entendemos lo que te está costando.</p>
@@ -283,49 +278,54 @@
                             <span class="d-block">y consigue clientes sin salir a buscarlos</span>
                         </a>
                     </div>
-                    <div class="col-md-5 d-none d-md-block text-center order-lg-1 order-0" style="margin-top: -100px;">
-                        <img src="img/hombre-asustado.png" class="img-fluid banner-img">
-                    </div>
+                    <div class="col-md-5"></div>
                 </div>
             </div>
         </section>
        
-        <section id="seccion-v1-home" class="seccion-v1-home videos-findoo">
+        <section id="seccion-v1-home" class="seccion-v3-home videos-findoo">
             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-9 pl-6">
+                        <div class="titulo-seccion wow zoomIn">
+                            <img src="img/findoo-text/encuentra-clientes-correctos.svg" alt="¿entonces como encuentras a los clientes correctos?" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="titulo-seccion">
-                            <h4 class="pl-5">... entonces</h4>
-                            <h3>cómo <span class="text-black">encuentras a los</span> <br><span class="before">clientes correctos</span></h3>
-                        </div>
+                    <div class="col-md-6 offset-md-4">
                         <p class="p-w50">Nos dimos cuenta de algo... <strong>seguramente estás leyendo esto desde tu smartphone....</strong> entonces, mira este video.</p>
-                        <div class="seccion-video text-center">
-                            <img src="img/banner-video.jpg" alt="" class="img-fluid">
-                            <a href="https://www.youtube.com/watch?v=OYAPm-OQZjQ" class="venobox play-btn" data-vbtype="video" data-autoplay="true"></a>
-                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-8 seccion-video text-center">
+                        <img src="img/banner-video.jpg" alt="" class="img-fluid">
+                        <a href="https://www.youtube.com/watch?v=OYAPm-OQZjQ" class="venobox play-btn" data-vbtype="video" data-autoplay="true"></a>
                     </div>
                 </div>
             </div>
         </section>
   
-        <section class="section-home-4">
+        <section class="seccion-v4-home">
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-md-4">
                     
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeInUp">
                         <p>Tus clientes tienen más cosas en común contigo de las que imaginas... tienen necesidades, intereses y sobretodo ¡TIENEN UN SMARTPHONE EN LA MANO!</p>
                         <p>Los smartphones se han vuelto imprescindibles en nuestro día a día e incluso son una herramienta muy útil que hace la vida de todos mucho más práctica.</p>
                         
                     </div>
                 </div>
 
-                <div class="row justify-content-center">
-                    <div class="col-md-4">
-                        <img src="img/cosas-comun-findo.png" alt="" class="img-fluid mb-5">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="img/cosas-comun-findo.png" alt="" class="img-fluid mb-5 p-2">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeInUp">
                         <p class="text-right-bold">... ¿y si hacemos que los smartphones signifiquen lo mismo para tu negocio?</p>
                         <p>Tal vez esto ya lo sabías. Seguro ya conoces la importancia de tener presencia digital y ya ingresaste a este mundo... y probablemente ya has experimentado algunas mejoras en tu negocio; pero...</p>
                         <p class="text-right-bold">... seamos honestos, ¿crees que es suficiente?</p>
@@ -334,7 +334,7 @@
                             ¡Ya estás en redes sociales!... ¿es suficiente?<br>
                             ¡Ya tienes un sitio web!... ¿es suficiente?<br>
                             ¡ya estás presente en una plataforma ecommerce!... ¿es suficiente?</p>
-                        <h4>¡NO ES SUFICIENTE!</h4>
+                        <p class="text-center-bold">¡NO ES SUFICIENTE!</p>
                         <p>Si así lo fuera, ya no tendrías la necesidad de buscar y encontrar nuevos clientes.</p>
                         <p><strong>La tecnología móvil ha redefinido el concepto de "tienda" y comprar ya no es lo que era antes.</strong></p>
                         <p>Los smartphones han cambiado el comportamiento de los consumidores; su forma de comprar ¡ya cambió!... <strong>¿y si utilizamos los smartphones de tus clientes para cambiar y mejorar tu forma de vender?</strong></p>
@@ -346,72 +346,69 @@
                 </div>
             </div>
         </section>
-        <section class="section-home-5">
+
+        <section id="seccion-v5-home" class="seccion-v5-home">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 col-8 titulos-home">
-                        <p>te sientes listo para</p>
-                        <p class="text-green">incrementar</p>
-                        <p>tus <span class="text-green after-icon">ventas</span></p>
+                    <div class="col-lg-8 wow zoomIn">
+                        <img src="img/findoo-text/listo-para-incrementar-tus-ventas.svg" alt="¿te sientes listo para incrementar tus ventas?" class="img-fluid">
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6">
                         <p>Obvio que sí... entonces, lo haremos simple.</p>
                         <p><strong>¡Los smartphones se han convertido en el nuevo asistente de compras de todo el mundo!</strong></p>
                         <p>Los clientes consultan, comparan, recomiendan, compran y vuelven a hacerlo una y otra vez a través de sus smartphones.</p>
                     </div>
-                    <div class="col-lg-3"></div>
+                    <div class="col-lg-4"></div>
                 </div>
                 <div class="row justify-content-center"> 
                     <div class="col-lg-11">
-                        <div class="section-banner p-banner0">
-                            <img src="img/solucion-findoo.png" class="img-fluid img-mobile-banner d-block d-sm-none">
-                            <h4><strong>la solución está en <span class="text-green"><span class="pl-lg-5">llegar a los clientes</span> <br class="d-none d-sm-block">que son valiosos </span> <span class="text-grey">para ti y para tu negocio</span></strong></h4>
+                        <div class="section-banner">
+                            <img src="img/findoo-text/banner-llegar-a-clientes-valiosos.svg" alt="La solución estó en llegar a los clientes que son valiosos" class="img-fluid  wow slideInLeft">
+                            <img src="img/solucion-findoo.png" class="img-fluid banner-hombre-select wow fadeIn" data-wow-duration="1.5s">
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
-                        <p class="expriencias-rigth">y todo se basa en EXPERIENCIAS.</p>
+                        <p class="mt-4">y todo se basa en EXPERIENCIAS.</p>
                         <p>Para encontrar a esos clientes que son valiosos para ti, <strong>primero necesitas ser valioso para ellos</strong> y para ser valioso para ellos, debes <strong>generar experiencias valiosas</strong> a su alrededor. </p>
-                        <a class="btn-findoo-blue mt-4"><strong>crea tu cuenta gratis</strong>
+                        <a class="btn-findoo-blue mt-1"><strong>crea tu cuenta gratis</strong>
                             <span class="d-block">y consigue clientes sin salir a buscarlos</span>
                         </a>
                     </div>
-                    <div class="col-lg-3 d-none d-md-block">
-                        <img src="img/solucion-findoo.png" class="img-fluid img-banner-right">
+                    <div class="col-lg-3">
+                        
                     </div>
                 </div>
             </div>
         </section>
   
-        <section class="section-home-6">
+        <section class="seccion-v6-home">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 titulos-home">
-                        <p>cómo generas</p>
-                        <p class="text-green">experiencias <br>valiosas</p>
-                        <p><span class="after-icon">para tus clientes</span></p>
+                    <div class="col-lg-9 titulos-home wow zoomIn">
+                       <img src="img/findoo-text/como-generas-experiencias-valiosas.svg" alt="cómo generas experiencias valiosas para tus clientes" class="img-fluid">
                     </div>
                 </div>
 
                 <div class="row justify-content-center mt-5">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 offset-md-1">
                         <p><strong>¡No te contaremos cuentos!</strong> Los consumidores ya no son los mismos, ahora son mucho más exigentes.</p>
                         <p>Si quieres generar experiencias valiosas para tus clientes y convertirte en alguien valioso para ellos, debes darles exactamente lo que buscan...</p>
                         <p class="text-right-bold">¡Asegúrate de que su vida sea más sencilla!</p>
                     </div>
-                    <div class="col-lg-4"></div>
+                    <div class="col-lg-5"></div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-md-6 offset-md-1">
                         <p>Tan simple como eso... <strong>facilítales la vida...</strong> cuando piensen en ti deben sentirse aliviados. Si haces esto serás mucho más valioso que el resto.</p>
                         <p class="text-right-bold pl-4">... ¿Cómo logras que tus clientes sientan que eres el más valioso?</p>
                         <p>Aparte de todo lo que ya conoces, necesitas hacer estas dos cosas:</p>
                         <div class="listado-findoo">
-                            <p><span>1</span> estar presente siempre<br> que tus clientes te necesiten</p>
-                            <p><span>2</span> facilitar las <br>compras de tus clientes</p>
+                            <p class="wow slideInLeft"><span>1</span> estar presente siempre<br> que tus clientes te necesiten</p>
+                            <p class="wow slideInLeft" data-wow-duration="1.5s"><span>2</span> facilitar las <br>compras de tus clientes</p>
                         </div>
                         <div class="pl-5 pb-5 pr-5 d-block d-sm-none">
                             <img src="img/necesitas-saber-findoo.png" class="img-fluid m-2">
@@ -421,29 +418,27 @@
                         <p>Recuerda que tu negocio depende de cuan bien lo haces, no de cuanto lo intentaste. No estás sólo en el mercado. <strong>No eres el único que busca los clientes correctos...</strong> hay muchos tiburones detrás de la misma presa.</p>
                         <p><strong>¡Asegúrate de hacerlo bien y de utilizar las herramientas adecuadas para ti y para tus clientes!</strong></p>
                         <p>Entonces ¿qué esperas?...</p>
-                        <a class="btn-findoo-blue mt-4"><strong>crea tu cuenta gratis</strong>
+                        <a class="btn-findoo-blue mt-3"><strong>crea tu cuenta gratis</strong>
                             <span class="d-block">y consigue clientes sin salir a buscarlos</span>
                         </a>
                     </div>
-                    <div class="col-lg-4 d-none d-sm-block">
-                        <img src="img/necesitas-saber-findoo.png" class="img-fluid">
+                    <div class="col-lg-5 d-none d-sm-block">
+                        <img src="img/necesitas-saber-findoo.png" class="img-fluid p-5">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-home-7">
+        <section id="seccion-v7-home" class="seccion-v7-home">
             <div class="container-fluid">
                 <div class="row justify-content-center espacio-mobile-left">
-                    <div class="col-lg-6 col-9 titulos-exclamacion">
-                        <p>mejora la</p>
-                        <p class="text-green">experiencia </p>
-                        <p><span class="after-icon">de tus clientes</span></p>
+                    <div class="col-lg-8 col-10 text-center wow zoomIn">
+                        <img src="img/findoo-text/mejora-experiencia-clientes.svg" alt="¡mejora la experiencia de tus clientes!" class="img-fluid">
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 d-none d-sm-block">
-                        <img src="img/que-puedo-hacer.png" class="img-fluid">
+                <div class="row">
+                    <div class="col-lg-5 d-none d-sm-block">
+                        <img src="img/que-puedo-hacer.png" class="img-fluid p-4">
                     </div>
                     <div class="col-lg-6 pt-2">
                         <p class="mt-5">Si quieres <strong>VENDER MÁS</strong> y <strong>SEGUIR CRECIENDO,</strong> no tienes otra opción.</p>
@@ -459,25 +454,22 @@
                         <p>Lo era... hasta que <span class="text-right-bold">¡llegó findoo!</span></p>
                     </div>
                 </div>
-                <div class="row section-banner-2 justify-content-between">
-                    <div class="col-lg-8 col-9">
-                        <p class="text-grey">FINDOO es la solución que necesitas para</p>
-                        <h3 class="text-green">vender más<span class="text-grey">,</span><br>seguir creciendo <span class="text-grey d-span-block">y encontrar a los</span> clientes correctos </h3>
-                    </div>
-                    <div class="col-lg-2 col-3 mr-lg-5">
-                        <img src="img/seguir-vendiendo.png" class="img-fluid mobile-extra-img">
+                <div class="row justify-content-center">
+                    <div class="col-lg-11 col-11 section-banner">
+                        <img src="img/findoo-text/findoo-solucion-vender-mas.svg" alt="FINDOO es la solución que necesitas para vender más, seguir creciendo y encontrar a los clientes correctos" class="img-fluid wow slideInLeft">
+                        <img src="img/seguir-vendiendo.png" class="img-fluid banner-findoo-creciendo wow fadeInUp" data-wow-duration="1.5s">
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <a class="btn-findoo-blue mt-4 d-none d-sm-block"><strong>crea tu cuenta gratis</strong>
+                        <a class="btn-findoo-blue mt-4"><strong>crea tu cuenta gratis</strong>
                             <span class="d-block">y consigue clientes sin salir a buscarlos</span>
                         </a>
                         <p class="mt-5">Nosotros nos trazamos la meta de encontrar una mejor respuesta...</p>
                         <p>Queríamos una herramienta que hiciera más fácil la vida de todos... Una herramienta que permitiera a las personas tener <strong>más tiempo, más seguridad, más ahorros y menos estrés.</strong> Una herramienta que hiciera que <strong>COMPRAR FUESE SÚPER SENCILLO.</strong></p>
                         <p>Queríamos una herramienta que ayudara a los negocios a encontrar a los clientes correctos, que les ayudara a vender más y a seguir creciendo.</p>
                         <p>Queríamos una herramienta que ayudara a todos a...</p>
-                        <p class="text-center text-right-bold">¡encontrar lo que están buscando!</p>
+                        <p class="text-center-bold">¡encontrar lo que están buscando!</p>
                         <p>Así desarrollamos FINDOO, la única herramienta que te permite...</p>
                     </div>
                     <div class="col-lg-4">
@@ -488,9 +480,9 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="listado-findoo">
-                            <p><span>1</span> estar presente siempre<br> que tus clientes te necesiten</p>
-                            <p><span>2</span> facilitar las <br>compras de tus clientes</p>
-                            <p><span>3</span> vender <br>como nunca</p>
+                            <p class="wow slideInLeft"><span>1</span> estar presente siempre<br> que tus clientes te necesiten</p>
+                            <p class="wow slideInLeft" data-wow-duration="1.5s"><span>2</span> facilitar las <br>compras de tus clientes</p>
+                            <p class="wow slideInLeft" data-wow-duration="1.9s"><span>3</span> vender <br>como nunca</p>
                         </div>
                         <p>... y lo hacemos mejor que nadie.</p>
                         <p>FINDOO es la herramienta que cambiará tu negocio para siempre.</p>
@@ -506,17 +498,16 @@
 
             </div>
         </section>
-        <section class="section-home-7 pb-4">
+
+        <section id="seccion-v8-home" class="seccion-v8-home pt-0">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 titulos-exclamacion">
-                        <p>ésto es</p>
-                        <p class="text-green">FINDOO</p>
-                        <p><span class="after-icon"></span></p>
+                    <div class="col-lg-7 wow zoomIn">
+                        <img src="img/findoo-text/esto-es-findoo.svg" alt="ésto es FINDOO" class="img-fluid">
                     </div>
                 </div>
 
-                <div class="row justify-content-center mt-5">
+                <div class="row justify-content-center mt-5 mb-5">
                     <div class="col-lg-4"></div>
                     <div class="col-lg-6">
                         <p>Findoo es la única aplicación móvil que hace que <strong>COMPRAR y VENDER</strong> sea <strong>MUCHO MÁS FÁCIL</strong>.</p>
@@ -524,18 +515,14 @@
                     </div>
                 </div>
 
-                <div class="row section-banner-2 justify-content-between">
-                    <div class="col-lg-2 ml-5">
-                        <img src="img/experiencias-unicas.png" class="img-fluid">
-                    </div>
-                    <div class="col-lg-8">
-                        <p class="text-grey">gracias a FINDOO podrás generar</p>
-                        <h3 class="text-green">experiencias <br>únicas <span class="text-grey">y</span>valiosas</h3>
-                        <p class="text-right"><span class="text-grey">para tus clientes</span></p>
+                <div class="row justify-content-center pt-5">
+                    <div class="col-lg-11 section-banner">
+                        <img src="img/findoo-text/banner-gracias-findoo-generas-experiencia.svg" alt="gracias a FINDOO podrás generar experiencias únicas yvaliosas para tus clientes" class="img-fluid wow slideInRight">
+                        <img src="img/experiencias-unicas.png" class="img-fluid banner-experiencias-unicas wow fadeInUp" data-wow-duration="1.5s">
                     </div>
                 </div>
 
-                <div class="row justify-content-center">
+                <div class="row justify-content-center mt-4">
                     <div class="col-lg-4"></div>
                     <div class="col-lg-6">
                         <p>... por fin tendrán <strong>más tiempo, más seguridad, más ahorros y menos estrés;</strong> y lo mejor de todo es que <strong>estarás presente para ellos siempre que te necesiten</strong>.</p>
@@ -546,13 +533,13 @@
             </div>
         </section>
 
-        <section id="section-home-8" class="pt-0 videos-findoo">
+        <section id="section-home-8" class="seccion-v9-home pt-0 videos-findoo">
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
                         <div class="seccion-video text-center">
                             <img src="img/banner-video2.jpg" alt="" class="img-fluid">
-                            <a href="https://www.youtube.com/watch?v=OYAPm-OQZjQ" class="venobox play-btn" data-vbtype="video" data-autoplay="true"></a>
+                            <a href="https://www.youtube.com/watch?v=OYSKjkqXWmk&ab_channel=Findoo" class="venobox play-btn" data-vbtype="video" data-autoplay="true"></a>
                         </div>
                     </div>
                 </div>
@@ -561,7 +548,7 @@
                         <p><strong>Lo más difícil para los clientes al momento de comprar es encontrar lo que realmente buscan...</strong></p>
                         <p>Incluso, a veces no encuentran lo que buscan y se ven obligados a comprar un producto parecido o similar.</p>
                         <p>... ¿cuántas veces tú has pasado por eso?; entonces <strong>¿por qué los clientes tendrían que pasar por lo mismo?</strong></p>
-                        <p class="text-center text-right-bold">"Muchas personas te están buscando; en Findoo queremos que te encuentren"</p>
+                        <p class="text-center-bold">"Muchas personas te están buscando; en Findoo queremos que te encuentren"</p>
                         <div class="text-right">
                             <a class="btn-findoo-blue mt-4"><strong>crea tu cuenta gratis</strong>
                                 <span class="d-block">y consigue clientes sin salir a buscarlos</span>
@@ -572,39 +559,31 @@
             </div>
         </section>
 
-        <section class="section-home-9">
+        <section id="seccion-v10-home" class="seccion-v10-home">
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-lg-7 titulos-exclamacion">
-                        <p>disfruta <br>las maravillas que</p>
-                        <p class="text-green">FINDOO</p>
-                        <p><span class="after-icon">puede hacer por ti y <br>por tu negocio</span></p>
+                    <div class="col-lg-9 wow zoomIn">
+                       <img src="img/findoo-text/disfruta-las-maravillas-de-findoo.svg" alt="disfruta las maravillas que FINDOO puede hacer por ti y por tu negocio" class="img-fluid">
                     </div>
                 </div>
 
                 <div class="row justify-content-center mt-5">
-                    <div class="col-sm-6 ">
+                    <div class="col-sm-7">
                         <p><strong>¡Findoo llegó para hacer tu vida más fácil!</strong> Es la única herramienta que realmente
                             te ayuda a encontrar a los clientes correctos, a vender más y a seguir creciendo.</p>
-                            
                         <p>Con Findoo sentirás que vender es un juego de niños... ¿sabes por qué? </p>
                     </div>
-                    <div class="col-sm-4"></div>
+                    <div class="col-sm-3"></div>
                 </div>
 
-                <div class="row section-banner-2 justify-content-between">
-                    <div class="col-lg-7">
-                        <p class="text-grey">...porque en FINDOO</p>
-                        <h3 class="text-green">encontramos<br> 
-                            a los clientes <br>
-                            que tanto buscabas</h3>
-                    </div>
-                    <div class="col-lg-3 mr-5">
-                        <img src="img/clientes-que-buscabas.png" class="img-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-11 section-banner">
+                        <img src="img/findoo-text/banner-porque-findoo-encontramos-clientes.svg" alt="porque en FINDOO encontramos a los clientes que tanto buscabas" class="img-fluid wow slideInLeft">
+                        <img src="img/clientes-que-buscabas.png" class="img-fluid banner-clientes-buscabas wow fadeInUp" data-wow-duration="1.2s">
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6 mt-4">
                         <p>... y ya no tienes que seguir sufriendo en el intento.</p>
                         <p>Encontrar a los clientes correctos es lo que realmente tú y tu negocio necesitan; y la buena noticia es que <strong>¡EN FINDOO LOS ENCONTRAMOS POR TI!</strong></p>
                         <p>Gracias a Findoo, tu negocio está a punto de despegar... porque <strong>Findoo es la plataforma digital que tanto necesitas</strong>.</p>
@@ -616,13 +595,13 @@
             </div>
         </section>
 
-        <section class="section-home-10 pt-0 pb-0">
+        <section class="seccion-11-home pb-0">
             <div class="container-fluid secciones-diferent-position">
                 <div class="row">
-                    <div class="col-sm-6 mt-5">
-                        <img src="img/vive-conectado.png" class="img-fluid">
+                    <div class="col-sm-6 mt-5 wow fadeInLeft">
+                        <img src="img/vive-conectado.png" class="img-fluid img-left-pl">
                     </div>
-                    <div class="col-sm-5">
+                    <div class="col-sm-6 text-left-pl wow fadeInRight">
                         <h3 class="text-black-md">vive <br>conectado</h3>
                         <p>Con Findoo podrás acceder a toda nuestra red de usuarios.</p>
                         <p>Ahora estarás presente siempre que tus clientes te necesiten. Olvídate de salir a buscar nuevos y más clientes; porque gracias a Findoo <strong>los clientes te encontrarán a ti y a tu negocio</strong>.</p>
@@ -635,28 +614,28 @@
             </div>
 
             <div class="container-fluid secciones-diferent-position">
-                <div class="row pl-lg-5">
-                    <div class="col-sm-5">
+                <div class="row">
+                    <div class="col-sm-6 text-right-pr wow fadeInLeft">
                         <h3 class="text-black-md text-right">acelera tu <br>crecimiento</h3>
                         <p>Con Findoo recibirás todas las solicitudes de compra de nuestros usuarios las 24 horas del día, estén donde estén.</p>
                         <p>¿Te lo imaginas?... Antes solo podías atender a los clientes que llegaban a tu tienda. Con Findoo, basta que alguien esté buscando algo... y listo, es un <strong>cliente nuevo para ti</strong>. </p>
                         <p>Con Findoo, los smartphones de todos nuestros usuarios se convertirán en tus <strong>nuevas tiendas</strong>.</p>
-                        <a class="btn-findoo-blue mt-1"><strong>crea tu cuenta gratis</strong>
+                        <a class="btn-findoo-blue mt-4"><strong>crea tu cuenta gratis</strong>
                             <span class="d-block">y consigue clientes sin salir a buscarlos</span>
                         </a>
                     </div>
-                    <div class="col-sm-7">
-                        <img src="img/acelera-tu-crecimiento.png" class="img-fluid">
+                    <div class="col-sm-6 text-center mt-4 wow fadeInRight">
+                        <img src="img/acelera-tu-crecimiento.png" class="img-fluid img-right-pr">
                     </div>
                 </div>
             </div>
 
             <div class="container-fluid secciones-diferent-position">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <img src="img/vende-como-nunca.png" class="img-fluid mt-3">
+                    <div class="col-sm-6 wow fadeInLeft">
+                        <img src="img/vende-como-nunca.png" class="img-fluid img-left-pl">
                     </div>
-                    <div class="col-sm-5">
+                    <div class="col-sm-6 text-left-pl wow fadeInRight">
                         <h3 class="text-black-md">vende <br>como nunca</h3>
                         <p>Con Findoo responde a las solicitudes de compra de todos nuestros usuarios e incrementa tus ventas desde dónde estés.</p>
                         <p>... ¿sabes por qué?... Porque <strong>puedes atender a todos desde tu smartphone</strong>. Puedes resolver sus dudas, mostrarles tus productos y acompañarlos en su compra a través de nuestro chat.</p>
@@ -669,8 +648,8 @@
             </div>
 
             <div class="container-fluid secciones-diferent-position">
-                <div class="row pl-lg-5">
-                    <div class="col-sm-5">
+                <div class="row">
+                    <div class="col-sm-6 text-right-pr wow fadeInLeft">
                         <h3 class="text-black-md text-right">monitorea<br> tus ventas</h3>
                         <p>Con Findoo puedes analizar y controlar de cerca el resultado de tus ventas y dirigir el crecimiento de tu negocio.</p>
 
@@ -681,15 +660,33 @@
                             <span class="d-block">y consigue clientes sin salir a buscarlos</span>
                         </a>
                     </div>
-                    <div class="col-sm-7">
-                        <img src="img/monitorea-tus-ventas-movil.png" class="img-fluid transform-scale">
+                    <div class="col-sm-6 mt-5 wow fadeInRight">
+                        <img src="img/monitorea-tus-ventas-movil.png" class="img-fluid img-right-pr-bg">
                     </div>
                 </div>
             </div>
-
         </section>
      
-        <section class="section-home-12">
+        <section class="seccion-v12-home pt-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInLeft">
+                        <img src="img/slide5-findoo.png" alt="" class="img-fluid img-transform-unete">
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight">
+                        <img src="img/findoo-text/unete-a-findoo.svg" alt="no esperes más... únete a findoo" class="img-fluid p-4">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center pt-3">
+                    <div class="col-sm-10 offset-sm-1 mt-5 wow fadeIn" data-wow-duration="1.9s">
+                        <img src="img/findoo-text/banner-descargala-ya.svg" alt="¡Descárgala ya!" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-v13-home">
             <div class="container-fluid mb-5">
                 <div class="row justify-content-center">
                     <div class="col-md-4 wow zoomIn">
