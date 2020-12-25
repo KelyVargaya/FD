@@ -488,7 +488,7 @@ div#findoo-carousel {
 #carousel-findoo h2 {
   color: #000;
   font-size: 100px;
-  font-size: 6.5vw;
+  font-size: 6.7vw;
   font-weight: 900;
   line-height: 0.9;
   letter-spacing: -4px;
@@ -496,7 +496,7 @@ div#findoo-carousel {
 #carousel-findoo .slide-1 h2, 
 #carousel-findoo .slide-5 h2{
   font-size: 115px;
-  font-size: 9vw !important;
+  font-size: 8.5vw !important;
 }
 #carousel-findoo .subtitle-sldier{
   font-size: 40px;
@@ -773,7 +773,9 @@ div#findoo-carousel {
   margin-left: 50px;
   margin-top: 84px;
 }
-
+.seccion-v1-home{
+  padding: 30px 0;
+}
 /* ==================== SECION VIDEOS ============================*/
 .videos-findoo .seccion-video{
   position: relative;
@@ -1084,6 +1086,9 @@ text-align: center
   .seccion-v12-home .btn-carousel {
     text-align: center !important;
     margin-top: 45px !important;
+  }
+  .videos-findoo .seccion-video img{
+    box-shadow: 5px 5px 1px rgb(0 0 0 / 15%)
   }
   .btn-dowloand-findoo{
     position: absolute;
