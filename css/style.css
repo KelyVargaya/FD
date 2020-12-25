@@ -37,6 +37,9 @@ p{
   margin-bottom: 34px;
   line-height: 1.8;
 }
+button:focus {
+  outline: 0 !important;
+}
 /*================================ MENU FINDOO =========================================*/
 #header {
   transition: all 0.5s;
@@ -300,7 +303,7 @@ p{
   display: inline-block;
   text-align: center;
   color: #ffffff !important;
-  padding: 8px 50px;
+  padding: 8px 42px;
   border-radius: 10px;
   border: 4px solid #e2e2e2;
   font-size: 22px;
@@ -397,10 +400,11 @@ p{
   margin-bottom: 10px !important;
   font-style: italic;
 }
-
+main{
+  overflow: hidden;
+}
 section{
   padding: 80px 0px;
-  overflow: hidden;
 }
 
 .section-title{
@@ -437,13 +441,7 @@ section{
     font-size: 30px !important;
   }
   .text-black-md {
-    font-size: 34px !important;
-  }
-  .text-black-md {
-    font-size: 34px !important;
-  }
-  .text-black-md {
-    font-size: 46px !important;
+    font-size: 44px !important;
   }
 }
 /*================================== FIN CLASES GENERALES ==========================================*/
@@ -490,6 +488,7 @@ div#findoo-carousel {
 #carousel-findoo h2 {
   color: #000;
   font-size: 100px;
+  font-size: 6.5vw;
   font-weight: 900;
   line-height: 0.9;
   letter-spacing: -4px;
@@ -497,6 +496,7 @@ div#findoo-carousel {
 #carousel-findoo .slide-1 h2, 
 #carousel-findoo .slide-5 h2{
   font-size: 115px;
+  font-size: 9vw !important;
 }
 #carousel-findoo .subtitle-sldier{
   font-size: 40px;
@@ -593,21 +593,28 @@ div#findoo-carousel {
   cursor: pointer;
 }
 @media (max-width: 768px) {
+  #carousel-findoo .slide-1 h2,
+  #carousel-findoo .slide-5 h2 {
+    font-size: 60px !important;
+  }
   #carousel-findoo h2 {
-    font-size: 58px !important;
+    font-size: 48px !important;
+    letter-spacing: -2px;
   }
   #carousel-findoo .subtitle-sldier {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 900;
     line-height: 1;
-}
+    letter-spacing: -2px !important;
+  }
 }
 
 @media (max-width: 768px) {
   #carousel-findoo .carousel-indicators {
     bottom: -15px;
   }
-  #carousel-findoo .btn-carousel a.btn-findoo{
+  #carousel-findoo .btn-carousel a.btn-findoo,
+  .btn-carousel a.btn-findoo{
     font-size: 15px !important;
     margin-right: 5px !important; 
     padding: 7px 12px !important;
@@ -619,17 +626,9 @@ div#findoo-carousel {
   .btn-descarga-app img{
     max-height: 25px;
   }
-  #carousel-findoo .subtitle-bottom {
-    letter-spacing: -1px !important;
-  }
   .hero {
-    background-image: url(../img/background-grey.png);
-    background-repeat: no-repeat;
     background-size: 106%;
     background-position: right 0%;
-    position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   #carousel-findoo .btn-carousel {
     text-align: center;
@@ -639,6 +638,12 @@ div#findoo-carousel {
   }
 }
 @media (max-width: 520px) {
+  .hero {
+    background-size: 118%;
+  }
+  .main-home-principal p {
+    font-size: 13px !important;
+  }
   section#carousel-findoo{
     background-size: 140%;
     background-position: right -4%;
@@ -648,9 +653,6 @@ div#findoo-carousel {
 }
   #carousel-findoo p.text-description-carousel {
     font-size: 15px;
-  }
-  #seccion-v1-home span.before:after {
-    font-size: 6rem !important;
   }
   
 }
@@ -669,7 +671,7 @@ div#findoo-carousel {
     padding: 0 50px;
   }
   #carousel-findoo #findoo-carousel{
-    padding-top: 15%;
+    padding-top: 3%;
   }
   #carousel-findoo .carousel-item {
     height: auto !important;
@@ -688,6 +690,17 @@ div#findoo-carousel {
     width: 9px;
     height: 9px;
   }
+  .seccion-v2-home{
+    padding-top: 0 !important;
+  }
+  .seccion-v1-home{
+    padding-top: 0px !important;
+    padding-bottom: 20px !important;
+  }
+  .seccion-v3-home{
+    padding-top: 0px !important;
+    padding-bottom: 25px !important;
+  }
 }
 @media (min-width: 1024px) {
   #carousel-findoo .carousel-control-prev, #carousel-findoo .carousel-control-next {
@@ -698,20 +711,10 @@ div#findoo-carousel {
   position: relative;
   margin-bottom: 20px;
 }
-#section-home-2{
-  padding-top: 0;
-  padding-bottom: 10px;
-}
-#section-home-2 .section-title {
-  text-align: left;
-  margin-bottom: 0;
-  padding-right: 6%;
-}
-
-#section-home-3 p, #section-home-3 h3{
+#section-home-2 p, #section-home-2 h3{
   color: #737373 !important;
 }
-#section-home-3 .banner-img-negocios{
+#section-home-2 .banner-img-negocios{
   position: absolute;
   right: -10.4%;
   top: 39%;
@@ -729,6 +732,10 @@ div#findoo-carousel {
   top: -17%;
   width: 23%;
 }
+#seccion-v8-home{
+  padding-top: 0 !important;
+  padding-bottom: 15px !important;
+}
 #seccion-v8-home .banner-experiencias-unicas{
   position: absolute;
   left: 2.5%;
@@ -740,10 +747,6 @@ div#findoo-carousel {
   right: -1%;
   top: -31%;
   width: 38%;
-}
-#seccion-v1-home{
-  position: relative;
-  text-align: center;
 }
 .secciones-diferent-position {
   margin-bottom: 9rem;
@@ -879,7 +882,6 @@ div#findoo-carousel {
 /* SECCION VIDEO*/
 .p-w50{
   text-align: left;
-  margin-bottom: 45px;
   margin-top: 30px;
 }
 
@@ -900,9 +902,8 @@ text-align: center
   transform: scale(1.2);
   margin-left: 10%;
 }
-
-.secciones-diferent-position p{
-  text-align: justify;
+.app-findoo-sections{
+  margin-bottom: 10rem;
 }
 .secciones-diferent-position h3{
   margin-bottom: 35px !important;
@@ -913,94 +914,6 @@ text-align: center
 
 .btn-descarga-app img{
   opacity: .8;
-}
-@media (min-width: 768px) {
-  .pl-6{
-    padding-left: 6rem !important;
-  }
-  .text-slider-left{
-    margin-bottom: -70px;
-}
-  .btn-descarga-app img{
-    margin-right: 15px;
-  }
-  .transform-scale{
-    transform: scale(1.2);
-    margin-top: 60px;
-  }
-}
-
-@media (max-width: 575px) {
-  .section-banner h4{
-    font-size: 17px;
-  }
-  .section-banner .text-green {
-    font-size: 48px;
-}
-  #carousel-findoo .subtitle-bottom {
-    letter-spacing: -1px !important;
-  }
-}
-@media (max-width: 768px) {
- 
-
-  .expriencias-rigth{
-    text-align: right;
-  }
-  
-
-  .titulos-home p, .titulos-exclamacion p {
-    letter-spacing: -2px !important;
-  }
-  .titulos-home .text-green, .titulos-exclamacion .text-green {
-    letter-spacing: -4px;
-  }
-  .titulos-exclamacion::before {
-    left: -25px;
-  }
-  #section-home-2 .section-title h2 {
-    font-size: 35px;
-  }
-  #seccion-v1-home .titulo-seccion h3 {
-    font-size: 40px;
-    overflow: hidden;
-  }
-  #section-home-2 .section-title h4 {
-    font-size: 18px;
-  }
-  #seccion-v1-homeo .titulo-seccion h4, #section-home-2 .section-title .text-black, #seccion-v1-home .titulo-seccion .text-black
-  {
-    color: #000;
-    font-size: 19px;
-  }
-  .btn-findoo-blue {
-    width: 100%;
-  }
-  .p-w50 {
-    padding-left: 0;
-  }
-  .listado-findoo p {
-    font-size: 21px !important;
-    padding-left: 50px !important;
-  }
-  .listado-findoo span {
-    font-size: 60px !important;
-  }
-  .main-home-principal p {
-    font-size: 15px;
-  }
-  .main-home-principal h3{
-    font-size: 20px;
-  }
-  .seccion-v13-home .app-image {
-    transform: none;
-    margin-left: 0;
-  }
-  .img-banner-right {
-    position: relative;
-    right: 0;
-    top: 0;
-  }
 }
 
 .btn-whatsapp{
@@ -1091,8 +1004,125 @@ text-align: center
 }
 .banner-sin-buscarlos{
   background: #edebeb;
+  padding: 15px 8%
+}
+.banner-sin-buscarlos .btn-findoo-blue{
+  width: 100% !important;
+}
+.section-home-final{
+  padding-bottom: 0 !important;
+}
+@media (min-width: 768px) {
+  .pl-6{
+    padding-left: 6rem !important;
+  }
+  .text-slider-left{
+    margin-bottom: -70px;
+}
+  .btn-descarga-app img{
+    margin-right: 15px;
+  }
+  .transform-scale{
+    transform: scale(1.2);
+    margin-top: 60px;
+  }
+  .chica-findoo-celebrando{
+    margin-top: 3%;
+  }
+  .image-hombre-sorprendido{
+    padding-right: 6%;
+    padding-left: 4%;
+  }
 }
 
+@media (max-width: 768px) {
+  .btn-findoo-blue {
+    width: 100%;
+  }
+  .p-w50 {
+    padding-left: 0;
+  }
+  .listado-findoo p {
+    font-size: 21px !important;
+    padding-left: 50px !important;
+  }
+  .listado-findoo span {
+    font-size: 60px !important;
+  }
+  .main-home-principal p {
+    font-size: 15px;
+  }
+  .main-home-principal h3{
+    font-size: 17px;
+  }
+  .seccion-v13-home .app-image {
+    transform: none;
+    margin-left: 0;
+  }
+  .img-banner-right {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .banner-contenedor{
+    padding: 0px !important;
+  }
+  .banner-text-contenedor{
+    padding: 0px !important
+  }
+  .banner-text-contenedor .titulo-seccion{
+    margin-right: -10px;
+    margin-left: -4px;
+  }
+  #section-home-2 .banner-img-negocios {
+    right: 0px !important;
+    top: -81% !important;
+    width: 28% !important;
+  }
+  .seccion-v12-home .btn-carousel {
+    text-align: center !important;
+    margin-top: 45px !important;
+  }
+  .btn-dowloand-findoo{
+    position: absolute;
+    top: 10px;
+    left: 70%;
+  }
+  .btn-dowloand-findoo img.img-fluid {
+    display: block;
+    max-width: 5em;
+    margin-bottom: 6px;
+    opacity: 0.7;
+  }
+  .app-findoo-sections {
+    margin-bottom: 4rem !important;
+  }
+  .banner-sin-buscarlos .usa-findo-image{
+    padding-right: 28px !important;
+    margin-top: 20px !important;
+  }
+  .banner-sin-buscarlos {
+    background: #ffffff !important; 
+    padding: 15px 0% !important;
+  }
+  .banner-sin-buscarlos p.text-findoo-slogan {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-banner h4{
+    font-size: 17px;
+  }
+  .section-banner .text-green {
+    font-size: 48px;
+}
+  #section-home-2 .banner-img-negocios {
+    width: 32% !important;
+  }
+}
 /*================================= FIN PAGINA INICIO =======================================*/
 
 
@@ -1227,8 +1257,29 @@ text-align: center
 #promociones .carousel-promociones{
   text-align: center;
 }
-
+#promociones .carousel-promociones .owl-nav{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  vertical-align: middle;
+  height: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#promociones .carousel-promociones .owl-nav button{
+  font-size: 98px;
+    color: rgb(115 115 115 / 59%);
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+#promociones .carousel-promociones .owl-nav button:hover{
+    color: #5fcd30 !important
+}
 /* ============ SECCION PAQUETES Y PLANES =======================*/
+
 #promociones .owl-dots{
   text-align: center;
   display: inline-block;
@@ -1297,6 +1348,19 @@ text-align: center
   margin-top: 40px;
   border: 4px solid #d6d4d4;
   font-weight: 800;
+  font-size: 20px;
+}
+.paquetes-planes .contenedor-purple-xs.purple-type-1{
+  opacity: 0.5;
+}
+.paquetes-planes .contenedor-purple-xs.purple-type-2{
+  opacity: 0.8;
+}
+.paquetes-planes .contenedor-purple-xs.purple-type-3{
+  opacity: 0.9;
+}
+.paquetes-planes .contenedor-purple-xs.purple-type-4{
+  opacity: 1;
 }
 .paquetes-planes .contenedor-white.descripcion-planes{
   box-shadow: 0px 0px 11px rgb(0 0 0 / 3%);
@@ -1614,11 +1678,12 @@ p.suma-total {
 
 /* ============================= FOOTER  ===================================*/
 #footer{
-  background: #000000;
+  background: #ffffff;
   padding: 18px 15px 2px;
+  color: #a6a6a6
 }
 #footer p{
-  text-align: center;
+  text-align: left;
   font-size: 14px;
 }
 
@@ -1711,7 +1776,7 @@ p.suma-total {
       margin-left: 5em;
   }
   .seccion-v12-home {
-    padding-top: 120px;
+    padding-top: 50px;
     overflow: inherit;
   }
 }
@@ -1723,6 +1788,14 @@ p.suma-total {
 
 }
 @media (max-width: 991px) {
+  
+  .mobile-nav-toggle {
+    font-size: 18px;
+    line-height: 1.7 !important;
+  }
+  #header .header-cart-link {
+    font-size: 24px;
+  }
   .header-cart-link {
     margin: 0px 45px 0 0;
     border-left: 0;
@@ -1831,20 +1904,34 @@ p.suma-total {
   }
   .secciones-diferent-position {
     padding: 0 15px !important;
+    margin-bottom: 3.5rem !important;
   }
   .secciones-diferent-position .img-left-pl {
-    transform: none !important;
-    margin-left: 0 !important;
+    margin-left: 19px !important;
     margin-top: 0 !important;
+    transform: scale(1.15) !important;
   }
   .secciones-diferent-position .img-right-pr-bg {
-    transform: scale(1.2) !important;
-    margin-left: 0 !important;
+    transform: scale(1.35) !important;
+    margin-left: 10px !important;
+    margin-top: 35px !important
+  }
+  
+  .secciones-diferent-position .img-right-pr {
+    transform: scale(1.14) !important;
+    margin-left: 17px !important;
     margin-top: 0 !important;
   }
-  .secciones-diferent-position .img-right-pr {
-    transform: none !important;
-    margin-left: 0 !important;
+  .text-right-pr p{
+    text-align: right !important;
+  }
+  .unete-a-findoo{
+    padding: 0 5px !important;
+  }
+  .img-transform-unete{
+    transform: scale(1.15) !important;
+    margin-left: 20px !important;
+    margin-top: 50px !important;
   }
   .columnas-planes {
     margin-top: 60px;
@@ -1860,12 +1947,15 @@ p.suma-total {
       margin-left: auto;
       margin-top: 0;
   }
- .columnas-afiliacion{
-  margin-bottom: 50px;
- } 
- .section-banner-2 .text-green {
-  font-size: 35px;
+  .seccion-v12-home{
+    padding-bottom: 0px !important;
   }
+  .columnas-afiliacion{
+      margin-bottom: 50px;
+  } 
+  .section-banner-2 .text-green {
+      font-size: 35px;
+    }
   .titulos-home .text-green, .titulos-exclamacion .text-green {
     font-size: 45px;
   }
@@ -1878,36 +1968,24 @@ p.suma-total {
     right: -42px;
   }
   .btn-findoo-blue {
-    padding: 8px 20px;
-    font-size: 18px;
+    padding: 8px 15px;
+    font-size: 17px;
   }
   .btn-findoo-blue span {
     font-size: 13px;
   }
-  .titulos-exclamacion .after-icon:after {
-    font-size: 7rem !important;
-    right: -60px !important;
+  p.text-mini {
+    font-size: 10px !important;
   }
-  .banner-img {
-    margin-left: 0;
-    padding: 50px;
-  }
-  #seccion-v1-home{
-    padding-top: 0 !important;
-  }
-  #seccion-v1-home .titulo-seccion h4 {
-    font-size: 22px;
-  }
- 
   .videos-findoo .play-btn::after {
-      border-top: 5px solid rgb(255 255 255 / 0%);
-      border-bottom: 5px solid rgb(255 255 255 / 0%);
-      border-left: 10px solid #fff;
+    border-top: 5px solid rgb(255 255 255 / 0%);
+     border-bottom: 5px solid rgb(255 255 255 / 0%);
+    border-left: 10px solid #fff;
   }
   .videos-findoo .play-btn {
     width: 44px;
     height: 44px;
-    top: 42%;
+    top: 40%;
   }
   section.section-home-4 {
     padding-top: 0;
@@ -1915,41 +1993,28 @@ p.suma-total {
   .section-home-4 h4 {
     font-size: 16px;
   }
-  .espacio-mobile-left{
-    padding-right: 25px;
+  .text-right-mobile{
+    text-align: right !important;
   }
-  .section-home-7 .titulos-exclamacion p{
-    font-size: 5vw;
+  .image-type1-mobile{
+    width: 52%;
+    margin: 0 auto 35px;
   }
-  .section-home-7 .titulos-exclamacion .text-green {
-    font-size: 11vw;
+  p.text-right-bold {
+    font-size: 17px !important;
+    line-height: 1.7 !important;
   }
-  .section-banner-2 {
-    margin: 30px 0 0 !important;
-    padding: 16px 11px 15px;
+  .section-home-final{
+    padding: 10px !important;
   }
-  .section-home-7 .section-banner-2 .text-grey {
-    font-size: 2.5vw;
-    letter-spacing: -0.5px;
-  }
-  .section-home-7 .d-span-block{
-    display: block;
-    margin-bottom: 5px;
-    margin-top: 2px;
-  }
-  .section-home-7 .section-banner-2 .text-green {
-    font-size: 6vw;
-  }
-  .section-home-7 .section-banner-2 img.mobile-extra-img {
-    transform: scale(2.6);
+  #footer p {
+    text-align: left;
+    font-size: 11px !important;
   }
 }
 @media (max-width: 650px) {
   #header .header-cart-link {
-    font-size: 23px;
-  }
-  .mobile-nav-toggle {
-    font-size: 25px;
+    font-size: 20px;
   }
   #header .logo img {
     max-height: 22px;
@@ -1979,6 +2044,13 @@ p.suma-total {
   }
   .text-right-bold {
     font-size: 18px;
+  }
+  .btn-findoo-blue span {
+    font-size: 10px;
+  }
+  p.text-right-bold {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
   }
 }
 
@@ -2052,7 +2124,7 @@ p.suma-total {
   }
 }
 
-/* pantallas grandes*/
+/* Pantallas XL */
 
 @media (min-width: 1600px) {
   p {
@@ -2077,9 +2149,7 @@ p.suma-total {
   #carousel-findoo .subtitle-sldier {
     font-size: 48px;
 }
-  #carousel-findoo h2 {
-    font-size: 112px;
-  }
+  
   #carousel-findoo p.text-description-carousel {
     font-size: 26px;
 }
