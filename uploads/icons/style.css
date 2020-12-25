@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'findoo';
-  src:  url('fonts/findoo.eot?duwufv');
-  src:  url('fonts/findoo.eot?duwufv#iefix') format('embedded-opentype'),
-    url('fonts/findoo.ttf?duwufv') format('truetype'),
-    url('fonts/findoo.woff?duwufv') format('woff'),
-    url('fonts/findoo.svg?duwufv#findoo') format('svg');
+  src:  url('fonts/findoo.eot?a3w8ob');
+  src:  url('fonts/findoo.eot?a3w8ob#iefix') format('embedded-opentype'),
+    url('fonts/findoo.ttf?a3w8ob') format('truetype'),
+    url('fonts/findoo.woff?a3w8ob') format('woff'),
+    url('fonts/findoo.svg?a3w8ob#findoo') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu-mobil:before {
+  content: "\e908";
+}
+.icon-comilla-left:before {
+  content: "\e906";
+}
+.icon-comilla-right:before {
+  content: "\e907";
+}
 .icon-icon-user-circle-findoo:before {
   content: "\e901";
 }
