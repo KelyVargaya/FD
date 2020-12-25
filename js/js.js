@@ -61,7 +61,7 @@
   
           if ($('body').hasClass('mobile-nav-active')) {
             $('body').removeClass('mobile-nav-active');
-            $('.mobile-nav-toggle span').toggleClass('icon-navicon icon-remove');
+            $('.mobile-nav-toggle span').toggleClass('icon-menu-mobil icon-remove');
             $('.mobile-nav-overly').fadeOut();
           }
           return false;
@@ -73,12 +73,12 @@
         class: 'mobile-nav d-lg-none'
       });
       $('body').append($mobile_nav);
-      $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><span class="icon-navicon"></span></button>');
+      $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><span class="icon-menu-mobil"></span></button>');
       $('body').append('<div class="mobile-nav-overly"></div>');
   
       $(document).on('click', '.mobile-nav-toggle', function(e) {
         $('body').toggleClass('mobile-nav-active');
-        $('.mobile-nav-toggle span').toggleClass('icon-navicon icon-remove');
+        $('.mobile-nav-toggle span').toggleClass('icon-menu-mobil icon-remove');
         $('.mobile-nav-overly').toggle();
       });
   
@@ -93,7 +93,7 @@
         if (!container.is(e.target) && container.has(e.target).length === 0) {
           if ($('body').hasClass('mobile-nav-active')) {
             $('body').removeClass('mobile-nav-active');
-            $('.mobile-nav-toggle span').toggleClass('icon-navicon icon-remove');
+            $('.mobile-nav-toggle span').toggleClass('icon-menu-mobil icon-remove');
             $('.mobile-nav-overly').fadeOut();
           }
         }
@@ -136,7 +136,8 @@
       items: 2,
    	  autoplayTimeout: 12000,
       loop:true,
-      margin: 18,
+      nav:true,
+      margin: 20,
       responsive:{
           0:{
               items:1,

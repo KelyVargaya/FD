@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?nty39u');
-  src:  url('fonts/icomoon.eot?nty39u#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?nty39u') format('truetype'),
-    url('fonts/icomoon.woff?nty39u') format('woff'),
-    url('fonts/icomoon.svg?nty39u#icomoon') format('svg');
+  font-family: 'findoo';
+  src:  url('fonts/findoo.eot?a3w8ob');
+  src:  url('fonts/findoo.eot?a3w8ob#iefix') format('embedded-opentype'),
+    url('fonts/findoo.ttf?a3w8ob') format('truetype'),
+    url('fonts/findoo.woff?a3w8ob') format('woff'),
+    url('fonts/findoo.svg?a3w8ob#findoo') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'findoo' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,6 +25,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu-mobil:before {
+  content: "\e908";
+}
+.icon-comilla-left:before {
+  content: "\e906";
+}
+.icon-comilla-right:before {
+  content: "\e907";
+}
+.icon-icon-user-circle-findoo:before {
+  content: "\e901";
+}
+.icon-icon-select-findoo:before {
+  content: "\e902";
+}
+.icon-pass-findoo:before {
+  content: "\e903";
+}
+.icon-user-findoo:before {
+  content: "\e904";
+}
+.icon-cart-findoo:before {
+  content: "\e905";
+}
 .icon-icon-king:before {
   content: "\e900";
 }
