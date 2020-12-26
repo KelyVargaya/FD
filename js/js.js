@@ -142,6 +142,7 @@
           0:{
               items:1,
               stagePadding: 40,
+              margin: 5,
           },
           600:{
               items:2,
