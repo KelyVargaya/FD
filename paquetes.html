@@ -42,11 +42,11 @@
     <main>
         <section id="hero-paquetes">
             <div class="container-fluid">
-                <div class="row align-items-md-end mt-5">
-                    <div class="col-lg-6 order-1 order-lg-0">
+                <div class="row align-items-md-end mt-md-5">
+                    <div class="col-lg-6 d-none d-lg-block">
                         <img src="img/paquetes-portada.png" alt="" class="img-fluid imagen-hero-paquetes">
                     </div>
-                    <div class="col-lg-6 text-lg-right text-center mb-4">
+                    <div class="col-lg-6 text-lg-right text-left mb-4">
                         <div class="title-paquetes">
                             <h1>aumenta tus <br>probabilidades de <br>vender... <span>más</span></h1>
                             <p>publica tus ofertas, descuentos y más en nuestra app</p>
@@ -108,7 +108,7 @@
             <div class="container-fluid">
                 <div class="section-title">
                     <h2><strong>¿qué puedes anunciar en findoo?</strong></h2>
-                    <ul class="list-unstyled d-md-flex justify-content-md-center">
+                    <ul class="list-unstyled d-flex justify-content-center">
                         <li>Descuentos</li>
                         <li>Promociones</li>
                         <li>Bonoficaciones</li>
@@ -136,9 +136,13 @@
                 </div>
                 <div class="row pt-4">
                     <div class="col-lg-5">
-                        <div class="section-title-planes container">
+                        <div class="section-title-planes container-fluid">
                             <div class="row align-items-lg-end">
                                 <h3>Paquetes Publicitarios</h3>
+                                <div class="paquetes-publi-subtitle d-block d-lg-none">
+                                    <p>Beneficio disponible únicamente para proveedores con plan contratado. </p>
+                                    <p>Los precios varían de acuerdo al plan contratado.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="d-none d-lg-block">
@@ -155,7 +159,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg col-md-6 text-center columnas-planes">
+                    <div class="col-lg col-md-6 text-center columnas-planes d-none d-lg-block">
                         <div class="section-title-planes container">
                             <div class="row align-items-lg-end">
                                 <div class="stars-content">
@@ -166,92 +170,150 @@
                         </div>
                         <div class="contenedor-white">
                             <ul class="list-unstyled text-center">
-                                <li><span class="d-block d-lg-none">anuncia en findoo</span> <span class="icon-close"></span></li>
-                                <li><span class="d-block d-lg-none">aanuncios en redes sociales de findoo</span> <span class="icon-close"></span></li>
-                                <li><span class="d-block d-lg-none">apermanencia del anuncio</span> <span class="icon-close"></span></li>
-                                <li><span class="d-block d-lg-none">arotación diaria del anuncio en findoo</span><span class="icon-close"></span></li>
+                                <li><span class="icon-close"></span></li>
+                                <li><span class="icon-close"></span></li>
+                                <li><span class="icon-close"></span></li>
+                                <li><span class="icon-close"></span></li>
                             </ul>
                         </div>
                         <p class="d-block d-lg-none font-weight-bold ">precio diario por paquete publicitario<sup>2</sup><span class="d-block">(15% dscto)</span></p>
                         <div class="contenedor-purple-xs purple-type-1">-</div>
                     </div>
+
                     <div class="col-lg col-md-6 text-center columnas-planes">
-                        <div class="section-title-planes container">
+                        <div class="section-title-planes container-fluid">
                             <div class="row align-items-lg-end">
-                                <div class="stars-content">
+                                <div class="stars-content d-none d-lg-block">
                                     <span class="icon-star"></span><span class="icon-star"></span>
                                 </div>
                                 <h4 class="">Basico</h4>
                             </div>
                         </div>
                         <div class="contenedor-white">
+                            <div class="monto-planes-mobile d-block d-lg-none">
+                                <p>s/ <span class="monto-text-bg">7.00</span> por día</p>
+                                <p class="font-weight-bold">Paquete Semanal</p>
+                                <p class="font-italic">precio del paquete publicitario por semana s/ 49.00</p>
+                            </div>
                             <ul class="list-unstyled text-center">
-                                <li><span class="d-block d-lg-none">anuncia en findoo</span> <span class="icon-check"></span></li>
-                                <li><span class="d-block d-lg-none">aanuncios en redes sociales de findoo</span> <span class="icon-check"></span></li>
-                                <li><span class="d-block d-lg-none">apermanencia del anuncio</span> 7 días</li>
-                                <li><span class="d-block d-lg-none">arotación diaria del anuncio en findoo</span>5,760 veces</li>
+                                <li><span class="icon-check-plan"></span><span class="plan-list-mobile d-block d-lg-none">anuncia en findoo</span></li>
+                                <li><span class="icon-check-plan"></span><span class="plan-list-mobile d-block d-lg-none">anuncios en redes sociales de findoo</span></li>
+                                <li>
+                                    <span class="icon-check-plan d-block d-lg-none"></span>
+                                    <span class="d-none d-lg-block">7 días</span>
+                                    <span class="plan-list-mobile d-block d-lg-none"><strong>7 días</strong> de permanencia del anuncio</span> 
+                                </li>
+                                <li>
+                                    <span class="icon-check-plan d-block d-lg-none"></span>
+                                    <span class="d-none d-lg-block">5,760 veces</span>
+                                    <span class="plan-list-mobile d-block d-lg-none"><strong>5,760 veces</strong> rotaciónes diarias del anuncio en findoo <sup>1</sup></span>
+                                </li>
                             </ul>
                         </div>
-                        <p class="d-block d-lg-none font-weight-bold ">precio diario por paquete publicitario<sup>2</sup><span class="d-block">(15% dscto)</span></p>
-                        <div class="contenedor-purple-xs purple-type-2">s/ 7.00</div>
+                        <div class="d-none d-lg-block">
+                            <p class="d-block d-lg-none font-weight-bold ">precio diario por paquete publicitario<sup>2</sup><span class="d-block">(15% dscto)</span></p>
+                            <div class="contenedor-purple-xs purple-type-2">s/ 7.00</div>
+                        </div>
+                        <div class="afiliate-mobile mb-4 d-block d-lg-none">
+                            <a href="cart.html" class="btn btn-findoo btn-lg btn-findoo-ranger">anuncia en findoo</a>
+                        </div>
                     </div>
                     <div class="col-lg col-md-6 text-center columnas-planes">
-                        <div class="section-title-planes container">
+                        <div class="section-title-planes container-fluid">
                             <div class="row align-items-lg-end">
-                                <div class="stars-content">
+                                <div class="stars-content d-none d-lg-block">
                                     <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
                                 </div>
                                 <h4 class="">Estandar</h4>
                             </div>
                         </div>
                         <div class="contenedor-white">
+                            <div class="monto-planes-mobile d-block d-lg-none">
+                                <p>s/ <span class="monto-text-bg">6.00</span> por día</p>
+                                <p class="font-weight-bold">Paquete Semanal</p>
+                                <p class="font-italic">precio del paquete publicitario por semana s/ 42.00</p>
+                            </div>
+
                             <ul class="list-unstyled text-center">
-                                <li><span class="d-block d-lg-none">anuncia en findoo</span> <span class="icon-check"></span></li>
-                                <li><span class="d-block d-lg-none">aanuncios en redes sociales de findoo</span> <span class="icon-check"></span></li>
-                                <li><span class="d-block d-lg-none">apermanencia del anuncio</span> 7 días</li>
-                                <li><span class="d-block d-lg-none">arotación diaria del anuncio en findoo</span>5,760 veces</li>
+                                <li><span class="icon-check-plan"></span> <span class="plan-list-mobile d-block d-lg-none">anuncia en findoo</span></li>
+                                <li><span class="icon-check-plan"></span> <span class="plan-list-mobile d-block d-lg-none">anuncios en redes sociales de findoo</span></li>
+                                <li>
+                                    <span class="icon-check-plan d-block d-lg-none"></span>
+                                    <span class="d-none d-lg-block">7 días</span>
+                                    <span class="plan-list-mobile d-block d-lg-none"><strong>7 días</strong> apermanencia del anuncio</span>
+                                </li>
+                                <li>
+                                    <span class="icon-check-plan d-block d-lg-none"></span>
+                                    <span class="d-none d-lg-block">5,760 veces</span>
+                                    <span class="plan-list-mobile d-block d-lg-none"><strong>5,760 veces</strong> rotaciones diarias del anuncio en findoo <sup>1</sup></span>
+                                </li>
                             </ul>
                         </div>
-                        <p class="d-block d-lg-none font-weight-bold ">precio diario por paquete publicitario<sup>2</sup><span class="d-block">(15% dscto)</span></p>
-                        <div class="contenedor-purple-xs purple-type-3">s/ 6.00</div>
+                        <div class="d-none d-lg-block">
+                            <div class="contenedor-purple-xs purple-type-3">s/ 6.00</div>
+                        </div>
+                        <div class="afiliate-mobile mb-4 d-block d-lg-none">
+                            <a href="cart.html" class="btn btn-findoo btn-lg btn-findoo-ranger">anuncia en findoo</a>
+                        </div>
                     </div>
                     <div class="col-lg col-md-6 text-center columnas-planes">
-                        <div class="section-title-planes container">
+                        <div class="section-title-planes container-fluid">
                             <div class="row align-items-lg-end">
-                                <div class="marca-premium">
+                                <div class="marca-premium d-none d-lg-block">
                                     <div class="three-stars">
                                         <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
                                     </div>
                                 </div>
-                                <div class="stars-content">
+                                <div class="stars-content d-none d-lg-block">
                                     <span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span>
                                 </div>
                                 <h4 class="">Premium</h4>
                             </div>
                         </div>
                         <div class="contenedor-white">
+                            <div class="monto-planes-mobile d-block d-lg-none">
+                                <p>s/ <span class="monto-text-bg">5.00</span> por día</p>
+                                <p class="font-weight-bold">Paquete Semanal</p>
+                                <p class="font-italic">precio del paquete publicitario por semana s/ 35.00</p>
+                            </div>
+
                             <ul class="list-unstyled text-center">
-                                <li><span class="d-block d-lg-none">anuncia en findoo</span> <span class="icon-check"></span></li>
-                                <li><span class="d-block d-lg-none">aanuncios en redes sociales de findoo</span> <span class="icon-check"></span></li>
-                                <li><span class="d-block d-lg-none">apermanencia del anuncio</span> 7 días</li>
-                                <li><span class="d-block d-lg-none">arotación diaria del anuncio en findoo</span>5,760 veces</li>
+                                <li><span class="icon-check-plan"></span> <span class="plan-list-mobile d-block d-lg-none">anuncia en findoo</span></li>
+                                <li><span class="icon-check-plan"></span> <span class="plan-list-mobile d-block d-lg-none">anuncios en redes sociales de findoo</span></span></li>
+                                <li>
+                                    <span class="icon-check-plan d-block d-lg-none"></span>
+                                    <span class="d-none d-lg-block">7 días</span>
+                                    <span class="plan-list-mobile d-block d-lg-none"><strong>7 días</strong> apermanencia del anuncio</span>
+                                </li>
+                                <li>
+                                    <span class="icon-check-plan d-block d-lg-none"></span>
+                                    <span class="d-none d-lg-block">5,760 veces</span>
+                                    <span class="plan-list-mobile d-block d-lg-none"><strong>5,760 veces</strong> rotaciones diarias del anuncio en findoo <sup>1</sup></span>
+                                </li>
                             </ul>
                         </div>
-                        <p class="d-block d-lg-none font-weight-bold ">precio diario por paquete publicitario<sup>2</sup><span class="d-block">(15% dscto)</span></p>
-                        <div class="contenedor-purple-xs purple-type-4">s/ 5.00</div>
+                        <div class="d-none d-lg-block">
+                            <div class="contenedor-purple-xs purple-type-4">s/ 5.00</div>
+                        </div>
+                        <div class="afiliate-mobile mb-4 d-block d-lg-none">
+                            <a href="cart.html" class="btn btn-findoo btn-lg btn-findoo-ranger">anuncia en findoo</a>
+                        </div>
                     </div>
                 </div>
-                <div class="row text-center align-items-center mt-3">
-                    <div class="col-lg-5 contenedor-transparente">
-                        <p class="text-lg-right text-uppercase">Anuncia en Findoo</p>
-                    </div>
-                    <div class="col-lg-3 mb-4 text-lg-left">
-                        <a href="cart.html" type="button" class="btn btn-findoo btn-extra-lg btn-findoo-ranger">¡comenzar ya!</a>
+                <div class="d-none d-lg-block">
+                    <div class="row text-center align-items-center mt-3">
+                        <div class="col-lg-5 contenedor-transparente">
+                            <p class="text-lg-right text-uppercase">Anuncia en Findoo</p>
+                        </div>
+                        <div class="col-lg-3 mb-4 text-lg-left">
+                            <a href="cart.html" type="button" class="btn btn-findoo btn-extra-lg btn-findoo-ranger">¡comenzar ya!</a>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="descripcion-subindices">
-                    <p>(1) Tope al máximo mensual de solicitudes de compra de los usuarios que podrán ser atendidas según el plan contratado. La cantidad de solicitudes expresada corresponde al volumen dispuesto por introducción</p>
-                    <p>(2) El precio mensual expresado corresponde al dispuesto por introducción. Este precio puede estar sujeto a cambios posteriores, los cuales no afectarán los contratos vigentes</p>
+                    <p>(1) Cantidad aproximada de impresiones diarias del anuncio en la sección ofertas dentro de la aplicación.</p>
+                    <p class="d-none d-lg-block">(2) Precio diario por paquete publicitario según el plan contratado. El precio diario expresado corresponde al dispuesto por introducción. Este precio puede estar sujeto a cambios posteriores. El precio total del paquete publicitario deberá ser calculado considerando los 7 días de permanencia del anuncio.</p>
                 </div>
             </div>
         </section>
