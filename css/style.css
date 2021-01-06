@@ -572,9 +572,11 @@ div#findoo-carousel {
 }
 #carousel-findoo .btn-carousel a{
   margin-right: 35px;
+  width: 31%;
 }
 #carousel-findoo .btn-carousel .btn-extra-lg {
   font-size: 1.30rem;
+  padding: 10px 5px !important;
 }
 #carousel-findoo .carousel-inner .carousel-item {
   transition-property: opacity;
@@ -662,10 +664,14 @@ div#findoo-carousel {
   }
   #carousel-findoo .btn-carousel a.btn-findoo,
   .btn-carousel a.btn-findoo{
-    font-size: 15px !important;
-    margin-right: 5px !important; 
-    padding: 7px 12px !important;
+    font-size: 14px !important;
+    margin-right: 6% !important; 
+    width: 28% !important; 
+    padding: 7px 4px !important;
     box-shadow: 0 0 0 1px #ff5757 inset, 0 3px 0 0 #bbbbbb, 0 3px 0px 1px #c3c3c3;
+  }
+  #carousel-findoo .btn-carousel .btn-extra-lg:nth-child(2) {
+    margin-right: 0 !important;
   }
   .btn-descarga-app {
     margin-top: 30px !important;
@@ -683,25 +689,6 @@ div#findoo-carousel {
   .slide-3 img, .slide-4 img{
     margin-bottom: 25px;
   }
-}
-@media (max-width: 520px) {
-  .hero {
-    background-size: 118%;
-  }
-  .main-home-principal p {
-    font-size: 13px !important;
-  }
-  section#carousel-findoo{
-    background-size: 140%;
-    background-position: right -4%;
-  }
-  #carousel-findoo .btn-carousel {
-    text-align: center;
-}
-  #carousel-findoo p.text-description-carousel {
-    font-size: 15px;
-  }
-  
 }
 @media (max-width: 991px) {
   #header.header-scrolled, #header.header-inner-pages {
@@ -734,8 +721,8 @@ div#findoo-carousel {
     max-height: 25px;
   }
   #carousel-findoo .carousel-indicators li {
-    width: 9px;
-    height: 9px;
+    width: 8px;
+    height: 8px;
   }
   .seccion-v2-home{
     padding-top: 0 !important;
@@ -747,6 +734,32 @@ div#findoo-carousel {
   .seccion-v3-home{
     padding-top: 0px !important;
     padding-bottom: 25px !important;
+  }
+}
+@media (max-width: 520px) {
+  #carousel-findoo .btn-carousel a.btn-findoo,
+  .btn-carousel a.btn-findoo{
+    width: 38% !important;
+  }
+  .hero {
+    background-size: 118%;
+  }
+  .main-home-principal p {
+    font-size: 13px !important;
+  }
+  section#carousel-findoo{
+    background-size: 140%;
+    background-position: right -4%;
+  }
+  #carousel-findoo .btn-carousel {
+    text-align: center;
+}
+  #carousel-findoo p.text-description-carousel {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  #carousel-findoo p.text-description-carousel br{
+    display: none;
   }
 }
 @media (min-width: 1024px) {
@@ -1162,6 +1175,9 @@ text-align: center
   .banner-sin-buscarlos p.text-findoo-slogan {
     margin-top: 20px;
   }
+  #login-section p, #opciones-afiliacion p{
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1173,6 +1189,9 @@ text-align: center
 }
   #section-home-2 .banner-img-negocios {
     width: 32% !important;
+  }
+  #login-section p, #opciones-afiliacion p{
+    font-size: 14px;
   }
 }
 /*================================= FIN PAGINA INICIO =======================================*/
@@ -1603,6 +1622,13 @@ text-align: center
   font-size: 22px;
   margin-bottom: 15px;
 }
+.cancela-afiliacion-text{
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 32px;
+  font-size: 11px !important;
+  font-style: italic;
+}
 .submit-form{
   font-weight: 600;
 }
@@ -1695,7 +1721,7 @@ p.suma-total {
 .form-login-register{
   background: rgb(0 0 0 / 11%);
   min-height: 185px;
-  padding: 25px 12px 15px;
+  padding: 30px 12px 10px;
 }
 .contendor-formulario{
   padding-right: 48px;
@@ -2475,6 +2501,16 @@ p.suma-total {
   .contendor-formulario h2 {
     font-size: 18px;
   }
+  #opciones-afiliacion h2 {
+    font-size: 17px;
+  }
+  #opciones-afiliacion{
+    padding-bottom: 0px !important;
+  }
+  .descripcion-opciones-afiliacion a {
+    font-size: 12px;
+    margin-top: 8px;
+  }
 }
 @media (max-width: 350px) {
   #hero-planes, #hero-paquetes, #hero-cart {
@@ -2498,7 +2534,6 @@ p.suma-total {
 }
 
 /* Pantallas XL */
-
 @media (min-width: 1600px) {
   p {
     font-size: 20px;
@@ -2515,15 +2550,14 @@ p.suma-total {
   }
   .section-banner-2 .text-green {
     font-size: 80px;
-}
+  }
   .section-banner-2 img {
     transform: scale(1.4);
   }
   #carousel-findoo .subtitle-sldier {
     font-size: 48px;
-}
-  
+  }
   #carousel-findoo p.text-description-carousel {
     font-size: 26px;
-}
+  }
 }
